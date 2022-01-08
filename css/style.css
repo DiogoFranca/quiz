@@ -1,0 +1,57 @@
+html {
+  font-size: 65.2%;
+}
+
+html, body {
+  height: 100vh;
+}
+
+body {
+  width: 100vw;
+  font-family: cursive;
+}
+
+.container {
+  height: 100%;
+}
+
+.container .card {
+  display: inline-block;
+  border: 1px solid grey;
+  padding: 1rem;
+  background: linear-gradient(to right, #ffba08, #faa307, #f48c06, #e85d04);
+  word-break: break-all;
+  max-width: 30rem;
+  width: 100%;
+}
+
+.container .card img {
+  display: block;
+  height: 20rem;
+  width: 30rem;
+}
+
+.container .card p {
+  color: white;
+  font-size: 1.8rem;
+}
+
+.container .card .btn {
+  display: block;
+  width: 100%;
+  padding: 1.3rem 0;
+  background: linear-gradient(#008000, #38b000);
+  border: none;
+  box-shadow: 0.1rem 0.5rem 0.2rem #007200;
+  transition: all 0.1s ease 0.1s;
+}
+
+.container .card .btn:active {
+  box-shadow: none;
+}
+
+.container .btn a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
