@@ -8,7 +8,7 @@ class Quiz {
 
   startsQuiz() {
     this.addStandardQuestion()
-    // this.addDataToTheQuiz()
+    this.addPages()
   }
 
   addStandardQuestion() {
@@ -36,17 +36,32 @@ class Quiz {
     })
   }
 
+  addPages() {
+    const arrayQuestion = import('./dataBase.js')
+      .then(obj => {
+        return obj['questions']
+      })
+      .then(array => {
+        for (let i = 2; i <= array.length + 1; i++) {
+          const clonePage = this.page.cloneNode(true)
+          clonePage.innerHTML = `<p>${i}</p>`
+          this.pages.appendChild(clonePage)
+        }
+      })
+  }
+
   // addDataToTheQuiz() {
-  //   const arrayQuestion = import('./dataBase.js').then(array => {
-  //     let contador = 2
-  //     array.questions.forEach(obj => {
-  //       const { question, answers } = obj
-  //       const page = this.clonePage()
+  //   const arrayQuestion = import('./dataBase.js').then(obj => {
+  //     const { questions } = obj
+  //     // let contador = 2
+  //     questions.forEach(obj => {
+  //       // const { question, answers } = obj
+  //       // const page = this.clonePage()
   //       console.log(obj)
 
   //       // Pages adicionado
-  //       page.innerHTML = `<p>${contador++}</p>`
-  //       this.pages.appendChild(page)
+  //       // page.innerHTML = `<p>${contador++}</p>`
+  //       // this.pages.appendChild(page)
   //     })
   //   })
   // }
