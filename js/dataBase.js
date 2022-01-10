@@ -1,177 +1,192 @@
 export const standardQuestion = {
-  question: 'Oi eu sou o goku',
+  question:
+    'No início do primeiro filme em que divisão da casa é que Harry vivia ?',
   answers: [
     {
-      answer: 'Dragon',
+      answer: 'Quarto de Dudley',
       status: false
     },
     {
-      answer: 'Avião',
-      status: false
-    },
-    {
-      answer: 'Gigante',
+      answer: 'Debaixo das escadas',
       status: true
     },
     {
-      answer: 'Borboleta',
+      answer: 'No maior quarto',
+      status: true
+    },
+    {
+      answer: 'No quarto mais pequeno',
       status: false
     },
     {
-      answer: 'Dinossauro',
+      answer: 'Todas opções erradas',
       status: false
     },
     {
-      answer: 'Vacc',
+      answer: 'Todas opções certas',
       status: false
     }
-  ]
+  ],
+  image:
+    'https://img.quizur.com/f/img61d2f546e34ec0.89069767.jpeg?lastEdited=1641215311'
 }
 
 export const questions = [
   {
-    question: 'Quem tipo de raça hagrid é ?',
+    question: 'Quem é que fez a cicatriz ao Harry ?',
     answers: [
       {
-        answer: 'Dragon',
+        answer: 'Bellatrix Lestrange',
         status: false
       },
       {
-        answer: 'Avião',
+        answer: 'Lord Voldemort',
+        status: true
+      },
+      {
+        answer: 'Narcisa Malfoy',
         status: false
       },
       {
-        answer: 'Gigante',
+        answer: 'Lucius Malfoy',
         status: false
       },
       {
-        answer: 'Borboleta',
+        answer: 'Todas opções erradas',
         status: false
       },
       {
-        answer: 'Dinossauro',
-        status: false
-      },
-      {
-        answer: 'Vacc',
+        answer: 'Todas opções certas',
         status: false
       }
-    ]
+    ],
+    image:
+      'https://img.quizur.com/f/img61d2fb917cb0c2.73552919.jpeg?lastEdited=1641216916'
   },
   {
-    question: 'Quem tipo de raça hagrid é ?',
+    question:
+      'Harry julgava que não tinha dinheiro nenhum até ter ido ver a herança que os pais tinham deixado, qual era o nome do banco onde ele foi buscar o seu dinheiro ?',
     answers: [
       {
-        answer: 'Dragon',
+        answer: 'Caldeirão Furado',
         status: false
       },
       {
-        answer: 'Avião',
+        answer: 'Borrões & Floreados',
         status: false
       },
       {
-        answer: 'Gigante',
+        answer: 'Gringotts',
+        status: true
+      },
+      {
+        answer: 'Hogwarts',
         status: false
       },
       {
-        answer: 'Borboleta',
+        answer: 'Todas opções erradas',
         status: false
       },
       {
-        answer: 'Dinossauro',
-        status: false
-      },
-      {
-        answer: 'Vacc',
+        answer: 'Todas opções certas',
         status: false
       }
-    ]
+    ],
+    image:
+      'https://img.quizur.com/f/img61d30163ca3520.17466330.jpg?lastEdited=1641218409'
   },
   {
-    question: 'Quem tipo de raça hagrid é ?',
+    question:
+      'Harry e Hagrid foram a um cofre buscar um saco pequeno e sujo, qual era o número do cofre ?',
     answers: [
       {
-        answer: 'Dragon',
+        answer: 713,
+        status: true
+      },
+      {
+        answer: 703,
         status: false
       },
       {
-        answer: 'Avião',
+        answer: 720,
         status: false
       },
       {
-        answer: 'Gigante',
+        answer: 723,
         status: false
       },
       {
-        answer: 'Borboleta',
+        answer: 'Todas opções erradas',
         status: false
       },
       {
-        answer: 'Dinossauro',
-        status: false
-      },
-      {
-        answer: 'Vacc',
+        answer: 'Todas opções certas',
         status: false
       }
-    ]
+    ],
+    image:
+      'https://img.quizur.com/f/img61d30135193490.73680042.jpg?lastEdited=1641218361'
   },
   {
-    question: 'Quem tipo de raça hagrid é ?',
+    question: 'Quem foi o fabricante da varinha de Harry ?',
     answers: [
       {
-        answer: 'Dragon',
+        answer: 'Ollivander',
+        status: true
+      },
+      {
+        answer: 'Gregorovitch',
         status: false
       },
       {
-        answer: 'Avião',
+        answer: 'Não sei',
         status: false
       },
       {
-        answer: 'Gigante',
+        answer: 'Não me importo',
         status: false
       },
       {
-        answer: 'Borboleta',
+        answer: 'Batman',
         status: false
       },
       {
-        answer: 'Dinossauro',
-        status: false
-      },
-      {
-        answer: 'Vaca',
+        answer: 'Mulher Maravilha',
         status: false
       }
-    ]
+    ],
+    image:
+      'https://img.quizur.com/f/img61d2f6d25954a5.70049152.jpg?lastEdited=1641215701'
   },
   {
-    question: 'Quem tipo de raça hagrid é ?',
+    question: 'Qual era o nome da coruja de Harry ?',
     answers: [
       {
-        answer: 'Dragon',
+        answer: 'Crookshanks',
         status: false
       },
       {
-        answer: 'Avião',
+        answer: 'Trevor',
         status: false
       },
       {
-        answer: 'Gigante',
+        answer: 'Scabbers',
         status: false
       },
       {
-        answer: 'Borboleta',
+        answer: 'Hedwig',
+        status: true
+      },
+      {
+        answer: 'Todas opções erradas',
         status: false
       },
       {
-        answer: 'Dinossauro',
-        status: false
-      },
-      {
-        answer: 'Vacc',
+        answer: 'Todas opões certas',
         status: false
       }
-    ]
+    ],
+    image:
+      'https://img.quizur.com/f/img61d2f706ad5308.93079601.png?lastEdited=1641215771'
   }
 ]
