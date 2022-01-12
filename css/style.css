@@ -10,6 +10,7 @@ body {
 body {
   width: 100vw;
   font-family: cursive;
+  background-color: black;
 }
 
 .container {
@@ -35,6 +36,7 @@ body {
 .container .card p {
   color: white;
   font-size: 1.8rem;
+  text-align: center;
 }
 
 .container .card .btn {

@@ -1,4 +1,4 @@
-import { standardQuestion, questions } from './dataBase.js'
+import { standardQuestion, questions } from './dataBaseNaruto.js'
 
 class Quiz {
   constructor() {

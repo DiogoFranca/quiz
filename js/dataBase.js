@@ -1,29 +1,29 @@
 export const standardQuestion = {
   question:
     'No início do primeiro filme em que divisão da casa é que Harry vivia ?',
-  answers: [
+  options: [
     {
-      answer: 'Quarto de Dudley',
+      option: 'Quarto de Dudley',
       status: false
     },
     {
-      answer: 'Debaixo das escadas',
+      option: 'Debaixo das escadas',
       status: true
     },
     {
-      answer: 'No maior quarto',
-      status: true
-    },
-    {
-      answer: 'No quarto mais pequeno',
+      option: 'No maior quarto',
       status: false
     },
     {
-      answer: 'Todas opções erradas',
+      option: 'No quarto mais pequeno',
       status: false
     },
     {
-      answer: 'Todas opções certas',
+      option: 'Todas opções erradas',
+      status: false
+    },
+    {
+      option: 'Todas opções certas',
       status: false
     }
   ],
@@ -34,29 +34,29 @@ export const standardQuestion = {
 export const questions = [
   {
     question: 'Quem é que fez a cicatriz ao Harry ?',
-    answers: [
+    options: [
       {
-        answer: 'Bellatrix Lestrange',
+        option: 'Bellatrix Lestrange',
         status: false
       },
       {
-        answer: 'Lord Voldemort',
+        option: 'Lord Voldemort',
         status: true
       },
       {
-        answer: 'Narcisa Malfoy',
+        option: 'Narcisa Malfoy',
         status: false
       },
       {
-        answer: 'Lucius Malfoy',
+        option: 'Lucius Malfoy',
         status: false
       },
       {
-        answer: 'Todas opções erradas',
+        option: 'Todas opções erradas',
         status: false
       },
       {
-        answer: 'Todas opções certas',
+        option: 'Todas opções certas',
         status: false
       }
     ],
@@ -66,29 +66,29 @@ export const questions = [
   {
     question:
       'Harry julgava que não tinha dinheiro nenhum até ter ido ver a herança que os pais tinham deixado, qual era o nome do banco onde ele foi buscar o seu dinheiro ?',
-    answers: [
+    options: [
       {
-        answer: 'Caldeirão Furado',
+        option: 'Caldeirão Furado',
         status: false
       },
       {
-        answer: 'Borrões & Floreados',
+        option: 'Borrões & Floreados',
         status: false
       },
       {
-        answer: 'Gringotts',
+        option: 'Gringotts',
         status: true
       },
       {
-        answer: 'Hogwarts',
+        option: 'Hogwarts',
         status: false
       },
       {
-        answer: 'Todas opções erradas',
+        option: 'Todas opções erradas',
         status: false
       },
       {
-        answer: 'Todas opções certas',
+        option: 'Todas opções certas',
         status: false
       }
     ],
@@ -98,29 +98,29 @@ export const questions = [
   {
     question:
       'Harry e Hagrid foram a um cofre buscar um saco pequeno e sujo, qual era o número do cofre ?',
-    answers: [
+    options: [
       {
-        answer: 713,
+        option: 713,
         status: true
       },
       {
-        answer: 703,
+        option: 703,
         status: false
       },
       {
-        answer: 720,
+        option: 720,
         status: false
       },
       {
-        answer: 723,
+        option: 723,
         status: false
       },
       {
-        answer: 'Todas opções erradas',
+        option: 'Todas opções erradas',
         status: false
       },
       {
-        answer: 'Todas opções certas',
+        option: 'Todas opções certas',
         status: false
       }
     ],
@@ -129,29 +129,29 @@ export const questions = [
   },
   {
     question: 'Quem foi o fabricante da varinha de Harry ?',
-    answers: [
+    options: [
       {
-        answer: 'Ollivander',
+        option: 'Ollivander',
         status: true
       },
       {
-        answer: 'Gregorovitch',
+        option: 'Gregorovitch',
         status: false
       },
       {
-        answer: 'Não sei',
+        option: 'Não sei',
         status: false
       },
       {
-        answer: 'Não me importo',
+        option: 'Não me importo',
         status: false
       },
       {
-        answer: 'Batman',
+        option: 'Batman',
         status: false
       },
       {
-        answer: 'Mulher Maravilha',
+        option: 'Mulher Maravilha',
         status: false
       }
     ],
@@ -160,29 +160,29 @@ export const questions = [
   },
   {
     question: 'Qual era o nome da coruja de Harry ?',
-    answers: [
+    options: [
       {
-        answer: 'Crookshanks',
+        option: 'Crookshanks',
         status: false
       },
       {
-        answer: 'Trevor',
+        option: 'Trevor',
         status: false
       },
       {
-        answer: 'Scabbers',
+        option: 'Scabbers',
         status: false
       },
       {
-        answer: 'Hedwig',
+        option: 'Hedwig',
         status: true
       },
       {
-        answer: 'Todas opções erradas',
+        option: 'Todas opções erradas',
         status: false
       },
       {
-        answer: 'Todas opões certas',
+        option: 'Todas opões certas',
         status: false
       }
     ],
