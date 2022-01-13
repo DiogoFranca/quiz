@@ -1,7 +1,9 @@
-import { standardQuestion, questions } from './dataBaseNaruto.js'
+import { standardQuestion as standardQuestion1, questions as questions1 } from './dataBase1.js'
 
-class Quiz {
-  constructor() {
+export class Quiz {
+  constructor(standardQuestion, questions) {
+    this.standardQuestion = standardQuestion;
+    this.questions = questions;
     this.question = document.querySelector('#question')
     this.btnsOptions = document.querySelectorAll('.btn-option')
     this.containerPages = document.querySelector('.container-pages')
@@ -51,7 +53,7 @@ class Quiz {
   }
 
   addNewOptions(indexQuestion) {
-    const { question, options } = questions[indexQuestion - 1]
+    const { question, options } = this.questions[indexQuestion - 1]
     let indexOption = 0
 
     this.btnsOptions.forEach(btn => {
@@ -62,12 +64,12 @@ class Quiz {
   }
 
   addNewQuestion(indexQuestion) {
-    const { question } = questions[indexQuestion - 1]
+    const { question } = this.questions[indexQuestion - 1]
     this.questionP.innerText = question
   }
 
   addNewImage(indexQuestion) {
-    const { question, options, image } = questions[indexQuestion - 1]
+    const { question, options, image } = this.questions[indexQuestion - 1]
     this.image.src = image
   }
 
@@ -88,7 +90,6 @@ class Quiz {
     nextPage[this.contador].setAttribute('id', 'selected-page')
     this.boxPage = nextPage[this.contador]
 
-    // this.addNewQuestion(this.contador)
     this.addNewImage(this.contador)
     this.addNewQuestion(this.contador)
     this.addNewOptions(this.contador)
@@ -98,8 +99,8 @@ class Quiz {
 
   addDefaultTextOptions() {
     for (let i = 0; i < this.btnsOptions.length; i++) {
-      this.btnsOptions[i].innerText = standardQuestion.options[i].option
-      if (standardQuestion.options[i].status) {
+      this.btnsOptions[i].innerText = this.standardQuestion.options[i].option
+      if (this.standardQuestion.options[i].status) {
         this.btnsOptions[i].setAttribute('class', 'true')
         continue
       }
@@ -109,7 +110,7 @@ class Quiz {
   }
 
   addDefaultQuestion() {
-    this.question.innerText = standardQuestion.question
+    this.question.innerText = this.standardQuestion.question
   }
 
   createEl(text) {
@@ -118,7 +119,7 @@ class Quiz {
   }
 
   addPages() {
-    for (let i = 2; i <= questions.length + 1; i++) {
+    for (let i = 2; i <= this.questions.length + 1; i++) {
       const cloneBoxPage = this.boxPage.cloneNode()
       const p = this.createEl('p')
       p.innerText = i
@@ -129,5 +130,5 @@ class Quiz {
   }
 }
 
-const quiz = new Quiz()
-quiz.startQuiz()
+export const quiz1 = new Quiz(standardQuestion1, questions1);
+quiz1.startQuiz()
